@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+form {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.form-item label {
+  margin: 0 0 0.25rem 0;
+}
+
+input {
+  padding: 0.75rem 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  border: none;
+  padding: 0.75rem 1rem;
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+
+.btn-primary {
+  background-color: #039be5;
+  color: #FFFFFF;
+}
+
+.btn-primary:hover {
+  background-color: #01579b;
+}

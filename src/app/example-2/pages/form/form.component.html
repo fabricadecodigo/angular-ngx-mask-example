@@ -1,0 +1,26 @@
+<h1 style="text-align: center">Exemplo 2</h1>
+
+<form [formGroup]="example" (ngSubmit)="onSubmit()" novalidate>
+
+  <div class="form-item">
+    <label for="cpf">CPF</label>
+    <input type="text" name="cpf" id="cpf" formControlName="cpf" />
+  </div>
+
+  <div class="form-item">
+    <label for="date">Data</label>
+    <input type="text" name="date" id="date" formControlName="date" />
+  </div>
+
+  <div class="form-item">
+    <label for="phone">Telefone</label>
+    <input type="tel" name="phone" id="phone" formControlName="phone" />
+  </div>
+
+  <div class="form-item">
+    <label for="price">Preço</label>
+    <input type="text" name="price" id="price" formControlName="price" />
+  </div>
+
+  <button type="submit" class="btn-primary">Salvar</button>
+</form>
