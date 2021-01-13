@@ -4,23 +4,24 @@
 
   <div class="form-item">
     <label for="cpf">CPF</label>
-    <input type="text" name="cpf" id="cpf" formControlName="cpf" />
+    <input type="text" name="cpf" id="cpf" formControlName="cpf" mask="000.000.000-00" />
   </div>
 
   <div class="form-item">
     <label for="date">Data</label>
-    <input type="text" name="date" id="date" formControlName="date" />
+    <input type="text" name="date" id="date" formControlName="date" mask="00/00/0000" placeholder="21/11/1987" />
   </div>
 
   <div class="form-item">
     <label for="phone">Telefone</label>
-    <input type="tel" name="phone" id="phone" formControlName="phone" />
+    <input type="tel" name="phone" id="phone" formControlName="phone" prefix="+55 " mask="(00) 00000-0000" />
   </div>
 
   <div class="form-item">
     <label for="price">Preço</label>
-    <input type="text" name="price" id="price" formControlName="price" />
+    <input type="text" name="price" id="price" formControlName="price" mask="separator.2" thousandSeparator="." />
   </div>
 
   <button type="submit" class="btn-primary">Salvar</button>
 </form>
+

@@ -9,6 +9,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './shared/pages/home/home.component';
 import { FormComponent } from './example-1/pages/form/form.component';
 
+import { NgxMaskModule } from 'ngx-mask';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,10 @@ import { FormComponent } from './example-1/pages/form/form.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxMaskModule.forRoot({
+      dropSpecialCharacters: false // ao salvar, vai manter a mascara
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

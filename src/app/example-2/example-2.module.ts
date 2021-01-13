@@ -6,12 +6,15 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { FormComponent } from './pages/form/form.component';
 
+import { NgxMaskModule } from 'ngx-mask';
+
 @NgModule({
   declarations: [FormComponent],
   imports: [
     CommonModule,
     Example2RoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxMaskModule.forChild()
   ]
 })
 export class Example2Module { }
